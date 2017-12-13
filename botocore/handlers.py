@@ -328,8 +328,8 @@ def add_expect_header(model, params, **kwargs):
         if hasattr(body, 'read'):
             # Any file like object will use an expect 100-continue
             # header regardless of size.
-            logger.debug("Adding expect 100 continue header to request.")
-            params['headers']['Expect'] = '100-continue'
+            logger.debug("NOT Adding expect 100 continue header to request.")
+            # params['headers']['Expect'] = '100-continue'
 
 
 def document_copy_source_form(section, event_name, **kwargs):
